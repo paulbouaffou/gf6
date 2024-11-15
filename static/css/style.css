@@ -1,0 +1,148 @@
+body {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c9/Wikimedia_presentation_template_v_2.png");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+footer a {
+    color: #00aced;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.body-color {
+    background-color: #EEE;
+    margin: 5%;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.container {
+    margin-top: 10%;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux boutons de passer à la ligne si l'espace est insuffisant */
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.button {
+    background-color: #FFF;
+    color: green;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: all 0.3s ease; /* Animation pour un effet fluide */
+}
+
+.button:hover {
+    background-color: green;
+    color: white;
+}
+
+.h1-color {
+    color: #FFF;
+    font-size: 2rem; /* Taille relative pour s'adapter aux écrans */
+    margin: 20px 0;
+}
+
+.info {
+  background-color: #FFF;
+  border-left: 6px solid #EEE;
+  margin: 0;
+  padding: 4px 12px;
+  padding-bottom: 45px;            /* Ajustez le padding selon vos besoins */
+  text-align: left;       /* Centre le texte horizontalement */
+  display: flex;            /* Utilisez flexbox pour le centrage vertical */
+  justify-content: left;  /* Centre le texte horizontalement */
+  align-items: center;
+  font-size: 20px;      /* Centre le texte verticalement */
+}
+
+/* Media Queries pour rendre le design responsive */
+@media (max-width: 768px) {
+    body {
+        background-size: contain; /* Ajuste l'image pour les écrans plus petits */
+        text-align: center;
+    }
+
+    .body-color {
+        margin: 5%;
+        padding: 10px;
+    }
+
+    .container {
+        margin-top: 20%;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .info {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .buttons {
+        flex-direction: column; /* Empile les boutons verticalement sur petits écrans */
+        gap: 10px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .info {
+        padding: 4px 12px;
+        padding-bottom: 45px;
+        font-size: 20px;
+    }
+
+    th, td {
+                font-size: 12px; /* Taille encore plus petite sur très petits écrans */
+                padding: 8px;
+            }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 768px) {
+            th, td {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            table {
+                font-size: 14px; /* Réduction de la taille globale */
+            }
+        }
+

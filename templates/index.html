@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles Wikipedia</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1-color">Cliquez sur un type d'article</h1>
+        <div class="buttons">
+            <a href="{{ url_for('articles_no_image') }}" class="button">Articles sans image</a>
+            <a href="{{ url_for('articles_reference_needed') }}" class="button">Articles à sourcer</a>
+        </div>
+        <footer>
+            <p> Cet outil est une futur fonctionnalité de la version 6 de l’outil <a href="gawa.wikimedia.ci" target="_blank" rel="noopener noreferrer"><strong>GAWA</strong></a><br/>de Wikimedia Côte d’Ivoire et son code source est disponible sur 
+                <a href="https://github.com/paulbouaffou" target="_blank" rel="noopener noreferrer">GitHub</a>.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
