@@ -34,6 +34,12 @@ footer a:hover {
     border-radius: 8px;
 }
 
+.table-wrapper {
+            overflow-x: auto; /* Permet le défilement horizontal pour petits écrans */
+            margin: 20px 0;
+            border: 1px solid #ccc; /* Ajoute une bordure pour délimiter */
+        }
+
 .container {
     margin-top: 10%;
 }
