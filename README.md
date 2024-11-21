@@ -31,7 +31,7 @@ Une fois l'environnement virtuel créé, vous devez l'activer.
 
 - **Sur Windows** :
   ```bash
-  venv\Scriptsctivate
+  venv\Scripts\activate
   ```
 
 - **Sur macOS/Linux** :
